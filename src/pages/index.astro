@@ -1,0 +1,1178 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+  <div class="bg-blobs">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <!-- Profile -->
+      <div class="profile-block">
+        <div class="avatar-ring">
+          <div class="avatar-placeholder">
+            <span>RL</span>
+          </div>
+        </div>
+        <h1 class="profile-name">Rony Lopez</h1>
+        <p class="profile-role">
+          <span class="typing-text">Full-Stack Developer</span>
+        </p>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Disponible para proyectos
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-block">
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+          <div class="ci-content">
+            <span class="ci-label">Email</span>
+            <a href="mailto:ronyinvo@icloud.com" class="ci-value">ronyinvo@icloud.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fa fa-phone"></i></div>
+          <div class="ci-content">
+            <span class="ci-label">Teléfono</span>
+            <a href="tel:+50255795858" class="ci-value">+502 5579-5858</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
+          <div class="ci-content">
+            <span class="ci-label">Ubicación</span>
+            <span class="ci-value">Quetzaltenango, GT</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fa fa-calendar"></i></div>
+          <div class="ci-content">
+            <span class="ci-label">Nacimiento</span>
+            <span class="ci-value">10 Dic, 1994</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social -->
+      <div class="social-block">
+        <a href="https://github.com/Ronyib26" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/RonyLopez" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:ronyinvo@icloud.com" class="social-btn" title="Email">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- Nav (mobile) -->
+      <nav class="sidebar-nav">
+        <a href="#about" class="snav-link active" data-section="about">Sobre mí</a>
+        <a href="#experience" class="snav-link" data-section="experience">Experiencia</a>
+        <a href="#skills" class="snav-link" data-section="skills">Habilidades</a>
+        <a href="#projects" class="snav-link" data-section="projects">Proyectos</a>
+        <a href="#contact" class="snav-link" data-section="contact">Contacto</a>
+      </nav>
+
+    </div>
+  </aside>
+
+  <!-- ===== TOPBAR (mobile) ===== -->
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="mono-tag">&lt;</span>RL<span class="mono-tag">/&gt;</span>
+    </div>
+    <nav class="topbar-nav">
+      <a href="#about">Sobre mí</a>
+      <a href="#experience">Exp.</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <!-- ABOUT -->
+    <section id="about" class="page-section active">
+      <div class="hero-block fade-in">
+        <div class="section-label">// introducción</div>
+        <h2 class="hero-heading">
+          Hola, soy <span class="accent-text">Rony Lopez</span> 👋
+        </h2>
+        <p class="hero-sub">Desarrollador Full-Stack con más de 1 año de experiencia construyendo aplicaciones web escalables y robustas. Especializado en React, Node.js, TypeScript, Laravel y arquitecturas cloud.</p>
+        <p class="hero-text">
+          He trabajado con organizaciones como <strong>FAFG</strong>, <strong>ISACA Guatemala</strong> y <strong>Pastoral Social Cáritas</strong>, entregando sistemas enterprise que soportan 500+ usuarios concurrentes. Enfocado en escribir código limpio, optimizado y crear soluciones de impacto real.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">Ver Proyectos <i class="fa fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-outline">Contáctame</a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-item card fade-in fade-in-delay-1">
+          <span class="stat-number accent-text">4+</span>
+          <span class="stat-label">Proyectos Enterprise</span>
+        </div>
+        <div class="stat-item card fade-in fade-in-delay-2">
+          <span class="stat-number accent-text">500+</span>
+          <span class="stat-label">Usuarios Concurrentes</span>
+        </div>
+        <div class="stat-item card fade-in fade-in-delay-3">
+          <span class="stat-number accent-text">10+</span>
+          <span class="stat-label">Tecnologías Dominadas</span>
+        </div>
+        <div class="stat-item card fade-in fade-in-delay-4">
+          <span class="stat-number accent-text">&lt;200ms</span>
+          <span class="stat-label">Tiempo de Respuesta</span>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="services-block">
+        <div class="section-label">// servicios</div>
+        <h3 class="section-title">¿Qué ofrezco?</h3>
+        <div class="services-grid">
+          <div class="service-card card">
+            <div class="sc-icon"><i class="fa fa-code"></i></div>
+            <h4>Desarrollo Frontend</h4>
+            <p>Interfaces modernas y responsivas con React, TypeScript, Tailwind CSS y Astro. Enfocado en rendimiento y UX.</p>
+          </div>
+          <div class="service-card card">
+            <div class="sc-icon"><i class="fa fa-server"></i></div>
+            <h4>Desarrollo Backend</h4>
+            <p>APIs RESTful escalables con Node.js, Express y Laravel. Arquitecturas limpias con autenticación JWT y sistemas de colas.</p>
+          </div>
+          <div class="service-card card">
+            <div class="sc-icon"><i class="fa fa-database"></i></div>
+            <h4>Bases de Datos</h4>
+            <p>Diseño y optimización de bases de datos MySQL, PostgreSQL y Oracle con 25+ índices escalables.</p>
+          </div>
+          <div class="service-card card">
+            <div class="sc-icon"><i class="fab fa-docker"></i></div>
+            <h4>DevOps & Cloud</h4>
+            <p>Despliegue en AWS, Docker, GitHub Actions. Sistemas production-ready de alta disponibilidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="page-section">
+      <div class="section-label">// trayectoria</div>
+      <h2 class="section-title">Experiencia Técnica</h2>
+
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Desarrollador Web</h3>
+                <span class="tl-company">Cooperativa DEICOM</span>
+              </div>
+              <div class="tl-stack">
+                <span class="tag">Astro</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Desarrollé una Landing Page de alto rendimiento logrando tiempos de carga mínimos con arquitectura de componentes reutilizables.</li>
+              <li>Implementé identidad visual corporativa precisa basada en manuales de marca.</li>
+              <li>Optimicé SEO técnico y responsividad para dispositivos móviles y escritorio.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Sistema de Gestión de Eventos</h3>
+                <span class="tl-company">ISACA Guatemala</span>
+              </div>
+              <div class="tl-stack">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">QR Codes</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Desarrollé sistema integral con registro público, control de asistencia en tablets y generación automatizada de diplomas.</li>
+              <li>Implementé arquitectura multi-guard para autenticación simultánea y sistema de colas para procesamiento asíncrono de emails masivos.</li>
+              <li>Optimizaciones de performance que soportaron <strong>500+ usuarios concurrentes</strong> con dashboard de filtros avanzados.</li>
+              <li>Integración de QR codes dinámicos, generación automática de PDFs y sistema de emails con reintentos automáticos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Plataforma de Gestión de Proyectos Sociales</h3>
+                <span class="tl-company">Pastoral Social Cáritas</span>
+              </div>
+              <div class="tl-stack">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Diseñé e implementé plataforma con Clean Architecture y <strong>65+ endpoints REST</strong> con autenticación JWT.</li>
+              <li>Desarrollé sistema de permisos granulares por proyectos, CRUDs completos y vistas Kanban interactivas.</li>
+              <li>Integré generación dinámica de PDFs con Puppeteer, dashboard analítico y exportación de reportes.</li>
+              <li>Implementé flujo de aprobaciones automatizado con sistema de notificaciones en tiempo real.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Sistema Enterprise de Gestión de Proyectos</h3>
+                <span class="tl-company">FAFG</span>
+              </div>
+              <div class="tl-stack">
+                <span class="tag">ScriptCase</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Construí sistema con APIs REST con rate limiting y cache multicapa inteligente.</li>
+              <li>Desarrollé Kanban enterprise con drag & drop y sistema de documentos con organización automática.</li>
+              <li>Implementé <strong>25+ índices escalables</strong> para optimización de queries complejas.</li>
+              <li>Sistema production-ready: soporta cientos de usuarios concurrentes con tiempo de respuesta &lt;200ms.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot accent-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Práctica Académica: API REST + Cliente Web</h3>
+                <span class="tl-company">Universidad Mariano Gálvez</span>
+              </div>
+              <div class="tl-stack">
+                <span class="tag">Node.js</span>
+                <span class="tag">React</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Diseñé y desarrollé API RESTful escalable para gestión de empleados y sucursales.</li>
+              <li>Construí aplicación web React con interfaz intuitiva y responsive design.</li>
+              <li>Desplegué en AWS para alta disponibilidad.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="edu-block">
+        <div class="section-label" style="margin-top: 60px;">// formación</div>
+        <h3 class="section-title">Educación & Certificaciones</h3>
+        <div class="edu-grid">
+          <div class="edu-item card">
+            <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+            <div>
+              <h4>Ingeniería en Sistemas</h4>
+              <p class="edu-org">Universidad Mariano Gálvez de Guatemala</p>
+              <span class="tag">2020 — Presente</span>
+            </div>
+          </div>
+          <div class="edu-item card">
+            <div class="edu-icon cert-icon"><i class="fa fa-certificate"></i></div>
+            <div>
+              <h4>Web Dev Essentials</h4>
+              <p class="edu-org">Certificación OpenEDG HTML/CSS</p>
+              <span class="tag">2025</span>
+            </div>
+          </div>
+          <div class="edu-item card">
+            <div class="edu-icon cert-icon"><i class="fa fa-certificate"></i></div>
+            <div>
+              <h4>JavaScript Essentials</h4>
+              <p class="edu-org">Certificación OpenEDG</p>
+              <span class="tag">2025</span>
+            </div>
+          </div>
+          <div class="edu-item card">
+            <div class="edu-icon cert-icon"><i class="fa fa-network-wired"></i></div>
+            <div>
+              <h4>CISCO CCNA</h4>
+              <p class="edu-org">Introducción a las Redes</p>
+              <span class="tag">2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="page-section">
+      <div class="section-label">// tecnologías</div>
+      <h2 class="section-title">Stack Técnico</h2>
+
+      <div class="skills-categories">
+
+        <div class="skill-cat card">
+          <h3 class="sc-title"><span class="accent-text">01</span> Lenguajes</h3>
+          <div class="skill-tags">
+            <div class="skill-pill"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-pill"><i class="fab fa-js"></i> TypeScript</div>
+            <div class="skill-pill"><i class="fab fa-php"></i> PHP</div>
+            <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-pill"><span class="mono-tag">C++</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat card">
+          <h3 class="sc-title"><span class="accent-text">02</span> Frontend</h3>
+          <div class="skill-tags">
+            <div class="skill-pill"><i class="fab fa-react"></i> React</div>
+            <div class="skill-pill"><i class="fab fa-html5"></i> HTML5 / CSS3</div>
+            <div class="skill-pill">Tailwind CSS</div>
+            <div class="skill-pill">Astro</div>
+            <div class="skill-pill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+          </div>
+        </div>
+
+        <div class="skill-cat card">
+          <h3 class="sc-title"><span class="accent-text">03</span> Backend</h3>
+          <div class="skill-tags">
+            <div class="skill-pill"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="skill-pill">Express.js</div>
+            <div class="skill-pill">Laravel</div>
+            <div class="skill-pill">Prisma ORM</div>
+            <div class="skill-pill">REST APIs</div>
+          </div>
+        </div>
+
+        <div class="skill-cat card">
+          <h3 class="sc-title"><span class="accent-text">04</span> Bases de Datos</h3>
+          <div class="skill-tags">
+            <div class="skill-pill"><i class="fa fa-database"></i> MySQL</div>
+            <div class="skill-pill">PostgreSQL</div>
+            <div class="skill-pill">Oracle SQL</div>
+          </div>
+        </div>
+
+        <div class="skill-cat card">
+          <h3 class="sc-title"><span class="accent-text">05</span> DevOps & Herramientas</h3>
+          <div class="skill-tags">
+            <div class="skill-pill"><i class="fab fa-git-alt"></i> Git / GitHub</div>
+            <div class="skill-pill"><i class="fab fa-docker"></i> Docker</div>
+            <div class="skill-pill"><i class="fab fa-aws"></i> AWS</div>
+            <div class="skill-pill"><i class="fab fa-linux"></i> Linux</div>
+            <div class="skill-pill">Hostinger</div>
+          </div>
+        </div>
+
+        <div class="skill-cat card soft-skills">
+          <h3 class="sc-title"><span class="accent-text">06</span> Aptitudes</h3>
+          <div class="skill-tags">
+            <div class="skill-pill soft">Organizado</div>
+            <div class="skill-pill soft">Aprendizaje Rápido</div>
+            <div class="skill-pill soft">Pensamiento Crítico</div>
+            <div class="skill-pill soft">Relaciones Interpersonales</div>
+            <div class="skill-pill soft">Trabajo en Equipo</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="page-section">
+      <div class="section-label">// portafolio</div>
+      <h2 class="section-title">Proyectos Destacados</h2>
+
+      <div class="projects-grid">
+
+        <div class="proj-card card">
+          <div class="proj-header">
+            <div class="proj-icon"><i class="fa fa-calendar-check"></i></div>
+            <div class="proj-links">
+              <a href="https://github.com/Ronyib26" target="_blank" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-title">Sistema de Gestión de Eventos</h3>
+          <p class="proj-desc">Sistema integral para ISACA Guatemala con registro público, control de asistencia con QR, generación automática de diplomas y procesamiento masivo de emails.</p>
+          <div class="proj-tech">
+            <span class="tag">Laravel</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="proj-highlight">
+            <i class="fa fa-bolt accent-text"></i>
+            <span>500+ usuarios concurrentes soportados</span>
+          </div>
+        </div>
+
+        <div class="proj-card card featured">
+          <div class="proj-featured-badge">Destacado</div>
+          <div class="proj-header">
+            <div class="proj-icon"><i class="fa fa-tasks"></i></div>
+            <div class="proj-links">
+              <a href="https://github.com/Ronyib26" target="_blank" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-title">Plataforma de Proyectos Sociales</h3>
+          <p class="proj-desc">Plataforma enterprise con Clean Architecture para Cáritas. Incluye 65+ endpoints REST, Kanban interactivo, generación de PDFs, notificaciones en tiempo real y dashboard analítico.</p>
+          <div class="proj-tech">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div class="proj-highlight">
+            <i class="fa fa-bolt accent-text"></i>
+            <span>65+ endpoints · JWT Auth · Puppeteer PDFs</span>
+          </div>
+        </div>
+
+        <div class="proj-card card">
+          <div class="proj-header">
+            <div class="proj-icon"><i class="fa fa-folder-open"></i></div>
+            <div class="proj-links">
+              <a href="https://github.com/Ronyib26" target="_blank" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-title">Sistema Enterprise FAFG</h3>
+          <p class="proj-desc">Sistema de gestión de proyectos con Kanban drag & drop, cache multicapa, 25+ índices optimizados y organización automática de documentos.</p>
+          <div class="proj-tech">
+            <span class="tag">ScriptCase</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <div class="proj-highlight">
+            <i class="fa fa-bolt accent-text"></i>
+            <span>&lt;200ms response time · Rate limiting</span>
+          </div>
+        </div>
+
+        <div class="proj-card card">
+          <div class="proj-header">
+            <div class="proj-icon"><i class="fa fa-rocket"></i></div>
+            <div class="proj-links">
+              <a href="https://github.com/Ronyib26" target="_blank" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-title">Landing Page — DEICOM</h3>
+          <p class="proj-desc">Landing page de alto rendimiento con Astro y Tailwind CSS. Identidad visual corporativa, SEO técnico optimizado y arquitectura de componentes reutilizables.</p>
+          <div class="proj-tech">
+            <span class="tag">Astro</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <div class="proj-highlight">
+            <i class="fa fa-bolt accent-text"></i>
+            <span>Performance Score 95+ · Mobile-first</span>
+          </div>
+        </div>
+
+        <div class="proj-card card">
+          <div class="proj-header">
+            <div class="proj-icon"><i class="fa fa-code-branch"></i></div>
+            <div class="proj-links">
+              <a href="https://github.com/Ronyib26" target="_blank" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-title">API REST + Cliente Web</h3>
+          <p class="proj-desc">API RESTful escalable para gestión de empleados y sucursales con cliente React responsivo, desplegada en AWS para alta disponibilidad.</p>
+          <div class="proj-tech">
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">AWS</span>
+          </div>
+          <div class="proj-highlight">
+            <i class="fa fa-bolt accent-text"></i>
+            <span>AWS Deploy · Alta disponibilidad</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="github-cta">
+        <p>¿Quieres ver más código?</p>
+        <a href="https://github.com/Ronyib26" target="_blank" rel="noopener" class="btn-outline">
+          <i class="fab fa-github"></i> Ver GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page-section">
+      <div class="section-label">// contáctame</div>
+      <h2 class="section-title">Trabajemos Juntos</h2>
+
+      <div class="contact-layout">
+        <div class="contact-info-block">
+          <p class="contact-intro">
+            Estoy disponible para proyectos freelance, oportunidades laborales o simplemente para charlar sobre tecnología. ¡Escríbeme!
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:ronyinvo@icloud.com" class="cm-item card">
+              <div class="cm-icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <span class="cm-label">Email directo</span>
+                <span class="cm-value">ronyinvo@icloud.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/RonyLopez" target="_blank" class="cm-item card">
+              <div class="cm-icon linkedin-ic"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="cm-label">LinkedIn</span>
+                <span class="cm-value">linkedin.com/in/RonyLopez</span>
+              </div>
+            </a>
+            <a href="https://github.com/Ronyib26" target="_blank" class="cm-item card">
+              <div class="cm-icon github-ic"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="cm-label">GitHub</span>
+                <span class="cm-value">github.com/Ronyib26</span>
+              </div>
+            </a>
+            <div class="cm-item card">
+              <div class="cm-icon phone-ic"><i class="fa fa-phone"></i></div>
+              <div>
+                <span class="cm-label">WhatsApp / Llamada</span>
+                <span class="cm-value">+502 5579-5858</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form card" id="contactForm">
+          <h3>Envíame un mensaje</h3>
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="¿De qué se trata?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary submit-btn">
+            <span class="btn-text">Enviar Mensaje <i class="fa fa-paper-plane"></i></span>
+          </button>
+          <p class="form-note">* Este formulario abre tu cliente de email.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Diseñado y construido con <span class="accent-text">♥</span> por <strong>Rony Lopez</strong> · Hecho con <span class="accent-text">Astro</span></p>
+  </footer>
+
+</Layout>
+
+<style>
+  /* ===== LAYOUT ===== */
+  .sidebar {
+    position: fixed;
+    left: 0; top: 0; bottom: 0;
+    width: 280px;
+    background: var(--bg2);
+    border-right: 1px solid var(--border);
+    z-index: 100;
+    overflow-y: auto;
+    transition: transform var(--transition);
+  }
+  .sidebar-inner {
+    padding: 40px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    min-height: 100%;
+  }
+
+  .topbar { display: none; }
+
+  .main-content {
+    margin-left: 280px;
+    padding: 60px 60px 60px 80px;
+    max-width: 1100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer {
+    margin-left: 280px;
+    padding: 24px 80px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ===== PROFILE ===== */
+  .profile-block { text-align: center; }
+  .avatar-ring {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    padding: 3px;
+    margin: 0 auto 16px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .avatar-placeholder {
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    background: var(--bg3);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -1px;
+  }
+  .profile-name {
+    font-size: 18px; font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .profile-role {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    margin-bottom: 12px;
+  }
+  .typing-text { color: var(--accent); }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(0,229,195,0.08);
+    border: 1px solid rgba(0,229,195,0.2);
+    color: var(--accent);
+  }
+  .status-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+
+  /* ===== CONTACT BLOCK ===== */
+  .contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .contact-item {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .ci-icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    background: var(--bg3);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent);
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+  .ci-content { display: flex; flex-direction: column; min-width: 0; }
+  .ci-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; }
+  .ci-value { font-size: 12px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  a.ci-value:hover { color: var(--accent); }
+
+  /* ===== SOCIAL ===== */
+  .social-block { display: flex; gap: 10px; }
+  .social-btn {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    transition: all var(--transition);
+    text-decoration: none;
+  }
+  .social-btn:hover { background: var(--accent); color: #000; border-color: var(--accent); }
+
+  /* ===== SIDEBAR NAV ===== */
+  .sidebar-nav { display: flex; flex-direction: column; gap: 4px; margin-top: auto; }
+  .snav-link {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: all var(--transition);
+    border: 1px solid transparent;
+    text-decoration: none;
+  }
+  .snav-link:hover, .snav-link.active {
+    color: var(--accent);
+    background: rgba(0,229,195,0.08);
+    border-color: rgba(0,229,195,0.15);
+  }
+  .snav-link::before { content: '› '; opacity: 0; transition: opacity var(--transition); }
+  .snav-link:hover::before, .snav-link.active::before { opacity: 1; }
+
+  /* ===== SECTIONS ===== */
+  .page-section { margin-bottom: 100px; scroll-margin-top: 30px; }
+  .accent-text { color: var(--accent); }
+  .mono-tag { font-family: var(--font-mono); font-size: 0.9em; color: var(--accent); }
+
+  /* ===== HERO ===== */
+  .hero-block { margin-bottom: 48px; }
+  .hero-heading {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    max-width: 620px;
+  }
+  .hero-text { max-width: 620px; color: var(--text-muted); margin-bottom: 32px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all var(--transition);
+  }
+  .btn-primary:hover { background: #00ffda; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,229,195,0.3); }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all var(--transition);
+  }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ===== STATS ===== */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+  .stat-item { text-align: center; }
+  .stat-number { display: block; font-size: 1.8rem; font-weight: 700; font-family: var(--font-mono); line-height: 1; margin-bottom: 6px; }
+  .stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* ===== SERVICES ===== */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .service-card { display: flex; align-items: flex-start; gap: 16px; }
+  .sc-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: rgba(0,229,195,0.1);
+    border: 1px solid rgba(0,229,195,0.2);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent);
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .service-card h4 { font-size: 14px; margin-bottom: 6px; }
+  .service-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+  /* ===== TIMELINE ===== */
+  .timeline { position: relative; padding-left: 32px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+  }
+  .tl-item { position: relative; margin-bottom: 28px; }
+  .tl-dot {
+    position: absolute;
+    left: -27px; top: 16px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--accent);
+  }
+  .accent-dot { background: var(--accent); }
+  .tl-content { padding: 20px 24px; }
+  .tl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .tl-title { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+  .tl-company { font-size: 13px; color: var(--accent); font-family: var(--font-mono); }
+  .tl-stack { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tl-list { list-style: none; padding: 0; }
+  .tl-list li {
+    padding: 4px 0 4px 16px;
+    position: relative;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  .tl-list li::before {
+    content: '▸';
+    position: absolute; left: 0;
+    color: var(--accent);
+  }
+  .tl-list strong { color: var(--text); }
+
+  /* ===== EDUCATION ===== */
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .edu-item { display: flex; align-items: flex-start; gap: 14px; }
+  .edu-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: rgba(0,229,195,0.1);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .cert-icon { background: rgba(123,97,255,0.1); color: var(--accent2); }
+  .edu-item h4 { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .edu-org { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+
+  /* ===== SKILLS ===== */
+  .skills-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .skill-cat { }
+  .sc-title { font-size: 13px; font-weight: 600; margin-bottom: 14px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text);
+    transition: all var(--transition);
+  }
+  .skill-pill:hover { border-color: var(--accent); color: var(--accent); }
+  .skill-pill.soft { background: rgba(123,97,255,0.07); border-color: rgba(123,97,255,0.2); color: #b0a0ff; }
+  .skill-pill i { color: var(--accent); font-size: 11px; }
+
+  /* ===== PROJECTS ===== */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .proj-card { position: relative; }
+  .proj-card.featured {
+    border-color: rgba(0,229,195,0.3);
+    background: linear-gradient(135deg, rgba(0,229,195,0.04), transparent);
+  }
+  .proj-featured-badge {
+    position: absolute;
+    top: -1px; right: 20px;
+    background: var(--accent);
+    color: #000;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 0 0 8px 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .proj-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .proj-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: rgba(0,229,195,0.1);
+    border: 1px solid rgba(0,229,195,0.15);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent);
+    font-size: 16px;
+  }
+  .proj-links { display: flex; gap: 8px; }
+  .proj-link {
+    color: var(--text-muted);
+    font-size: 16px;
+    transition: color var(--transition);
+  }
+  .proj-link:hover { color: var(--accent); }
+  .proj-title { font-size: 15px; font-weight: 600; margin-bottom: 10px; }
+  .proj-desc { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px; }
+  .proj-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .proj-highlight {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-muted);
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .github-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 32px;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .contact-intro { color: var(--text-muted); margin-bottom: 24px; line-height: 1.7; }
+  .contact-methods { display: flex; flex-direction: column; gap: 12px; }
+  .cm-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px !important;
+    text-decoration: none;
+    color: inherit;
+  }
+  .cm-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: rgba(0,229,195,0.1);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .linkedin-ic { background: rgba(0,119,181,0.15); color: #0077b5; }
+  .github-ic { background: rgba(255,255,255,0.05); color: #fff; }
+  .phone-ic { background: rgba(0,229,195,0.1); color: var(--accent); }
+  .cm-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; display: block; }
+  .cm-value { font-size: 13px; color: var(--text); display: block; }
+
+  /* Form */
+  .contact-form { padding: 32px !important; }
+  .contact-form h3 { margin-bottom: 24px; font-size: 16px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    transition: border-color var(--transition);
+    outline: none;
+    resize: vertical;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus { border-color: var(--accent); }
+  .submit-btn { width: 100%; justify-content: center; margin-top: 8px; }
+  .form-note { font-size: 11px; color: var(--text-dim); margin-top: 10px; text-align: center; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .main-content { padding: 40px; }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .skills-categories { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%);
+      width: 260px;
+    }
+    .sidebar.open { transform: translateX(0); }
+
+    .topbar {
+      display: flex;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 56px;
+      background: rgba(13,15,20,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 200;
+    }
+    .topbar-brand { font-family: var(--font-mono); font-size: 14px; font-weight: 700; }
+    .topbar-nav { display: none; }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--text);
+      border-radius: 1px;
+      transition: all var(--transition);
+    }
+
+    .main-content {
+      margin-left: 0;
+      padding: 80px 20px 40px;
+    }
+    .footer { margin-left: 0; padding: 20px; }
+
+    .services-grid { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .contact-layout { grid-template-columns: 1fr; }
+    .edu-grid { grid-template-columns: 1fr; }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .tl-header { flex-direction: column; }
+  }
+</style>
+
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const sidebar = document.getElementById('sidebar');
+  hamburger?.addEventListener('click', () => sidebar?.classList.toggle('open'));
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('.page-section');
+  const navLinks = document.querySelectorAll('.snav-link');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(`.snav-link[href="#${entry.target.id}"]`);
+        activeLink?.classList.add('active');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach(s => observer.observe(s));
+
+  // Animate elements on scroll
+  const fadeEls = document.querySelectorAll('.card, .tl-item, .edu-item');
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  fadeEls.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    fadeObserver.observe(el);
+  });
+
+  // Contact form
+  document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = (document.getElementById('name') as HTMLInputElement).value;
+    const subject = (document.getElementById('subject') as HTMLInputElement).value || 'Contacto desde Portafolio';
+    const email = (document.getElementById('email') as HTMLInputElement).value;
+    const message = (document.getElementById('message') as HTMLTextAreaElement).value;
+    const body = `Hola Rony,%0A%0AMi nombre es ${name} (${email})%0A%0A${message}`;
+    window.open(`mailto:ronyinvo@icloud.com?subject=${encodeURIComponent(subject)}&body=${body}`);
+  });
+</script>
